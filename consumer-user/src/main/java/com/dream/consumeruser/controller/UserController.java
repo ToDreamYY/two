@@ -12,7 +12,7 @@ public class UserController {
     @GetMapping("/buy")
     public String buyTicket(){
         String s = restTemplate.getForObject("http://PROVIDER-TICKET/ticket", String.class);
-        System.out.println("第一次上传成功");
+        System.out.println("第一次上传成功！！！");
         return "购买了"+s;
     }
 }
